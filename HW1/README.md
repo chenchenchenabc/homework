@@ -6,7 +6,7 @@
 ### 簡短心路歷程
 剛開始以自建模型的方式去training,嘗試調整以上五種參數,過程中產生over_ fitting與under_fitting的情況(最好情況:accuracy約97%,valid_accuracy約70%)但因為不斷嘗試很容易達到Colab的GPU使用量上限,經過幾次嘗試後決定以網路上推薦用來進行圖形辨別的Xception模型當作bass_model去做fine turning,最終在圖形資料生成器加入horizontal_flip進行資料增強時對訓練有很大的提升,accuarcy與valid_accuracy皆約99%,雖然成效很好但訓練一次非常耗時,最終調整過新增的全連接層節點數與batch_size後看起來並沒有降低準確率,且訓練速度也快了一些,另外也有注意到在訓練model時是不用將圖片以numpy方式儲存的,而使用模型時會以numpy方式儲存大量圖片,原因為訓練model時使用的ImageDataGenerator會負責將圖片轉為模型可接受的張量格式,故不需以numpy方式存取圖片。
 
-### 前置作業
+### 在colab執行的前置作業
 ###### 1.將所有第一題中的檔案解壓縮至新的資料夾命名為"70_dog"
 ###### 2.將"Testing set.zip"解壓縮至新的資料夾命名為"70_dog_testing_set"並移入"70_dog"資料夾內
 ###### 3.此時"70_dog"資料夾內會有"70_dog_testing_set"、"test"、"train"、"valid"、"dog.csv"共四個檔案夾、一個.csv檔
