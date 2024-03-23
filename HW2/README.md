@@ -36,7 +36,7 @@
 ###### 2.將"Meta-heuristic Algorithm"與"作業二_Meta_heuristic_Algorithm.ipynb"上傳至google雲端硬碟中的"我的雲端硬碟"
 
 ### 若不在colab上執行,則須更改程式內以下路徑至各資料存放路徑
-###### (程式區塊一)"# 讀取資料"內的四個路徑
+###### (程式區塊一)"# 讀取資料"內的folder_path
 
 ### 程式流程
 
