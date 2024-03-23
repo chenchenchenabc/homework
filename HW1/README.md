@@ -10,7 +10,7 @@
 ###### 1.將所有第一題中的檔案解壓縮至新的資料夾命名為"70_dog"
 ###### 2.將"Testing set.zip"解壓縮至新的資料夾命名為"70_dog_testing_set"並移入"70_dog"資料夾內
 ###### 3.此時"70_dog"資料夾內會有"70_dog_testing_set"、"test"、"train"、"valid"、"dog.csv"共四個檔案夾、一個.csv檔
-###### 4.將"70_dog"上傳至google雲端硬碟中的"我的雲端硬碟"
+###### 4.將"70_dog"與"作業一_Deep_learning.ipynb"上傳至google雲端硬碟中的"我的雲端硬碟"
 ###### 5.(若第一次使用colab)在雲端硬碟頁面點選左上角"新增"->"更多"->"連結更多應用程式"搜尋"colaboratory"後安裝,對想開起的檔案(.ipynb檔)點右鍵"選擇開啟工具"->"Google Colaboratory"
 ###### 6.執行程式前可在colab介面點擊左上角"編輯"內的"筆記本設定"有免費提供的GPU可使用
 
