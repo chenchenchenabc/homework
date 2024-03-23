@@ -1,7 +1,7 @@
 # homework
 HW1.[Deep Learning]
 
-/*此題所學*/
+#此題所學
 得知colab有提供GPU使用(但每天有使用量限制),故最終決定以colab實做作業,作業中了解了使用keras建立CNN模型的步驟分為1.準備數據 2.建立模型架構 3.編譯模型 4.訓練模型 5.評估模型 6.使用模行進行預測,也粗略的知道了1.Learning_Rate 2.Batch_size 3.Optimizer 4.Dense_Layer_Units 5.Data Augmentation 會對training過程與結果造成那些影響。
 
 /*簡短心路歷程*/
