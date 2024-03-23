@@ -7,26 +7,26 @@
 剛開始以自建模型的方式去training,嘗試調整以上五種參數,過程中產生over_ fitting與under_fitting的情況(最好情況:accuracy約97%,valid_accuracy約70%)但因為不斷嘗試很容易達到Colab的GPU使用量上限,經過幾次嘗試後決定以網路上推薦用來對圖形辨別的Xception模型當作bass_model去做fine turning,最終在圖形資料生成器加入horizontal_flip進行資料增強時對訓練有很大的提升,accuarcy與valid_accuracy皆約99%,雖然成效很好但訓練一次非常耗時,最終調整過新增的全連接層節點數與batch_size後看起來並沒有降低準確率,且訓練速度也快了很多,另外也有注意到在訓練model時是不用將圖片以numpy方式儲存的,而使用模型時會以numpy方式儲存大量圖片,原因為訓練model時使用的ImageDataGenerator會負責將圖片轉為模型可接受的張量格式,故不需以numpy方式存取圖片。
 
 ### 前置作業
-##### 1.將所有第一題中的檔案解壓縮至新的資料夾命名為"70_dog"
-##### 2.將"Testing set.zip"解壓縮至新的資料夾命名為"70_dog_testing_set"並移入"70_dog"資料夾內
-##### 3.此時"70_dog"資料夾內會有"70_dog_testing_set"、"test"、"train"、"valid"、"dog.csv"共四個檔案夾、一個.csv檔
-##### 4.將"70_dog"上傳至google雲端硬碟中的"我的雲端硬碟"
-##### 5.(若第一次使用colab)在雲端硬碟頁面點選左上角"新增"->"更多"->"連結更多應用程式"搜尋"colaboratory"後安裝,對想開起的檔案(.ipynb檔)點右鍵"選擇開啟工具"->"Google Colaboratory"
-##### 6.執行程式前可在colab介面點擊左上角"編輯"內的"筆記本設定"有免費提供的GPU可使用
+###### 1.將所有第一題中的檔案解壓縮至新的資料夾命名為"70_dog"
+###### 2.將"Testing set.zip"解壓縮至新的資料夾命名為"70_dog_testing_set"並移入"70_dog"資料夾內
+###### 3.此時"70_dog"資料夾內會有"70_dog_testing_set"、"test"、"train"、"valid"、"dog.csv"共四個檔案夾、一個.csv檔
+###### 4.將"70_dog"上傳至google雲端硬碟中的"我的雲端硬碟"
+###### 5.(若第一次使用colab)在雲端硬碟頁面點選左上角"新增"->"更多"->"連結更多應用程式"搜尋"colaboratory"後安裝,對想開起的檔案(.ipynb檔)點右鍵"選擇開啟工具"->"Google Colaboratory"
+###### 6.執行程式前可在colab介面點擊左上角"編輯"內的"筆記本設定"有免費提供的GPU可使用
 
 
 ### 程式大致流程
 (程式區塊一)
-1.授權colab對雲端硬碟進行存取
+###### 1.授權colab對雲端硬碟進行存取
 
 (程式區塊二,此區塊產生訓練模型並儲存)
-2.程式會從"70_dog"中的train/valid/test中找到指定品種作為訓練資料
-3.以Xception為bass做fine turning
-4.將訓練好的model存於"70_dog"內新增的"fine turning"資料夾
+###### 2.程式會從"70_dog"中的train/valid/test中找到指定品種作為訓練資料
+###### 3.以Xception為bass做fine turning
+###### 4.將訓練好的model存於"70_dog"內新增的"fine turning"資料夾
 
 (程式區塊三,此區塊載入訓練好的模型做testing)
-5.載入經過fine turning的模型並輸入testing資料
-6.將預測結果以.xlsx檔輸出至"70_dog"內的"fine turning"資料夾
+###### 5.載入經過fine turning的模型並輸入testing資料
+###### 6.將預測結果以.xlsx檔輸出至"70_dog"內的"fine turning"資料夾
 
 
 
@@ -64,21 +64,21 @@
 
 
 ### 前置作業
-1.將作業二的四個txt檔p06_c、p06_p、p06_s、p06_w放入新的資料夾命名為"Meta-heuristic Algorithm"
-2.將"Meta-heuristic Algorithm"上傳至google雲端硬碟中的"我的雲端硬碟"
+###### 1.將作業二的四個txt檔p06_c、p06_p、p06_s、p06_w放入新的資料夾命名為"Meta-heuristic Algorithm"
+###### 2.將"Meta-heuristic Algorithm"上傳至google雲端硬碟中的"我的雲端硬碟"
 
 ### 程式流程
 
 (程式區塊一)
-1.授權colab對雲端硬碟進行存取
-2.考慮到未來函數使用時程式更方便理解並減少數據誤植發生可能,故選擇以矩陣方式合併存取weight與profit
+###### 1.授權colab對雲端硬碟進行存取
+###### 2.考慮到未來函數使用時程式更方便理解並減少數據誤植發生可能,故選擇以矩陣方式合併存取weight與profit
 
 (程式區塊二,此區塊實作Hill_Climbing)
-3.設定評估函數,目的為取得不超過capacity的最大profit
-4.設定hill_climbing函數,生成初始解與鄰近解,鄰近解採隨機翻轉一個物品選取狀態並與最佳解做比較
-5.執行hill_climbing並繪出圖片
+###### 3.設定評估函數,目的為取得不超過capacity的最大profit
+###### 4.設定hill_climbing函數,生成初始解與鄰近解,鄰近解採隨機翻轉一個物品選取狀態並與最佳解做比較
+###### 5.執行hill_climbing並繪出圖片
 
 (程式區塊三,此區塊實作Genetic_Algo)
-6.設定基因演算法參數,定義適應度函數、初始化群體、交叉操作與突變操作
-7.設定genetic_algo函數,不斷讓profit較大的父代做交叉並讓子代有10%機率突變
-8.執行genetic_algo並繪出圖片
+###### 6.設定基因演算法參數,定義適應度函數、初始化群體、交叉操作與突變操作
+###### 7.設定genetic_algo函數,不斷讓profit較大的父代做交叉並讓子代有10%機率突變
+###### 8.執行genetic_algo並繪出圖片
