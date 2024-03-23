@@ -20,7 +20,7 @@
 ###### 1.授權colab對雲端硬碟進行存取  
 
 #### (程式區塊二,此區塊產生訓練模型並儲存)
-###### 2.程式會從"70_dog"中的train/valid/test中找到指定品種作為訓練資料
+###### 2.程式會從"70_dog"中的train、valid、test中找到指定品種作為訓練資料
 ###### 3.以Xception為bass做fine turning
 ###### 4.將訓練好的model存於"70_dog"內新增的"fine turning"資料夾  
 
