@@ -33,7 +33,7 @@
 
 ### 前置作業
 ###### 1.將作業二的四個txt檔p06_c、p06_p、p06_s、p06_w放入新的資料夾命名為"Meta-heuristic Algorithm"
-###### 2.將"Meta-heuristic Algorithm"上傳至google雲端硬碟中的"我的雲端硬碟"
+###### 2.將"Meta-heuristic Algorithm"與"作業二_Meta_heuristic_Algorithm.ipynb"上傳至google雲端硬碟中的"我的雲端硬碟"
 
 ### 程式流程
 
