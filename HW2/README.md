@@ -35,23 +35,23 @@
 ###### 1.將作業二的四個txt檔p06_c、p06_p、p06_s、p06_w放入新的資料夾命名為"Meta-heuristic Algorithm"
 ###### 2.將"Meta-heuristic Algorithm"與"作業二_Meta_heuristic_Algorithm.ipynb"上傳至google雲端硬碟中的"我的雲端硬碟"
 
-### 若不在colab上執行,則須更改程式內以下路徑至各資料存放路徑
-###### (程式區塊一)"# 讀取資料"內的folder_path
+### 若不在colab上執行,則須更改程式內以下路徑
+###### (程式區塊二)"# 讀取資料"內的folder_path至四個資料所存放之資料夾路徑
 
 ### 程式流程
 
 #### (程式區塊一)
 ###### 1.授權colab對雲端硬碟進行存取
+
+#### (程式區塊二)
 ###### 2.考慮到未來函數使用時程式更方便理解並減少數據誤植發生可能,故選擇以矩陣方式合併存取weight與profit 
 
-
-#### (程式區塊二,此區塊實作Hill_Climbing)
+#### (程式區塊三,此區塊實作Hill_Climbing)
 ###### 3.設定評估函數,目的為取得不超過capacity的最大profit
 ###### 4.設定hill_climbing函數,生成初始解與鄰近解,鄰近解採隨機翻轉一個物品選取狀態並與最佳解做比較
 ###### 5.執行hill_climbing並繪出圖片 
 
-
-#### (程式區塊三,此區塊實作Genetic_Algo)
+#### (程式區塊四,此區塊實作Genetic_Algo)
 ###### 6.設定基因演算法參數,定義適應度函數、初始化群體、交叉操作與突變操作
 ###### 7.設定genetic_algo函數,不斷讓profit較大的父代做交叉並讓子代有10%機率突變
 ###### 8.執行genetic_algo並繪出圖片
