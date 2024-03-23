@@ -35,7 +35,7 @@
 ###### 1.將作業二的四個txt檔p06_c、p06_p、p06_s、p06_w放入新的資料夾命名為"Meta-heuristic Algorithm"
 ###### 2.將"Meta-heuristic Algorithm"與"作業二_Meta_heuristic_Algorithm.ipynb"上傳至google雲端硬碟中的"我的雲端硬碟"
 
-### 若不想在colab執行則需更改以下路徑至資料存取路徑
+### 若不在colab上執行,則須更改程式內以下路徑至各資料存放路徑
 ###### (程式區塊一)"# 讀取資料"內的四個路徑
 
 ### 程式流程
