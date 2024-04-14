@@ -1,5 +1,7 @@
 # HW2.[Meta-heuristic Algorithm]
 
+##作業更正事項:調整程式碼使閱讀與使用上更加簡單，將各參數集中於開頭更方便做調整
+
 ## HW2.(1)[Hill Climbing]
 
 ### 此題所學
