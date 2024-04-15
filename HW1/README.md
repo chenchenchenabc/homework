@@ -32,7 +32,7 @@
 
 #### (程式區塊三,此區塊產生訓練模型並儲存)
 ###### 5.程式會從"70_dog"中的train、valid、test中找到指定品種作為訓練資料
-###### 6.以Xception為bass做fine turning
+###### 6.以Xception為base做fine turning
 ###### 7.將訓練好的model存於"70_dog"內新增的"fine turning"資料夾  
 
 #### (程式區塊四,此區塊載入訓練好的模型做testing)
