@@ -1,6 +1,6 @@
 # HW1.[Deep Learning]
 ### 作業更正事項:新增自建模型之程式碼於程式區塊二嘗試改善其valid_accuracy，並調整程式以更方便閱讀與使用
-更正想法:在多次調整各神經層與learning_rate後並沒有很好的進步,想起學長提過此題可能因數據不夠使得自建模型的準確率不會太高且我在自行嘗試時發生over_fitting情況，判斷可針對資料生成器、batch_size進行調整並新增dropout神經層，在多次嘗試調整後，雖然仍有over_fitting的情況，但valid_accuracy也由約70%提升至70~80%，而training_accuracy稍微降低我認為可能是dropout神經層所導致。
+更正想法:在多次調整自建模型各神經層與learning_rate後並沒有很好的進步,想起學長提過此題可能因數據不夠使得自建模型的準確率不會太高且我在自行嘗試時發生over_fitting情況，判斷可針對資料生成器、batch_size進行調整並新增dropout神經層，在多次嘗試調整後，雖然仍有over_fitting的情況，但valid_accuracy也由約70%提升至70~80%，而training_accuracy稍微降低我認為可能是dropout神經層所導致。
 
 ### 此題所學
 得知colab有提供GPU使用(但每天有使用量限制),故最終決定以colab實做作業,作業中了解了使用keras建立CNN模型的步驟分為1.準備數據 2.建立模型架構 3.編譯模型 4.訓練模型 5.評估模型 6.使用模行進行預測,也粗略的知道了1.Learning_Rate 2.Batch_size 3.Optimizer 4.Dense_Layer_Units 5.Data Augmentation 會對training過程與結果造成那些影響。
