@@ -1,5 +1,5 @@
 # HW1.[Deep Learning]
-### 作業更正事項:新增自建模型之程式碼於程式區塊二並改善其valid_accuracy，並調整程式以更方便閱讀與使用
+### 作業更正事項:新增自建模型之程式碼於程式區塊二嘗試改善其valid_accuracy，並調整程式以更方便閱讀與使用
 更正想法:在多次調整個神經層後並沒有很好的進步,想起學長提過此題可能因數據不夠使得自建模型的準確率不會太高且我在自行嘗試時發生over_fitting情況，判斷可針對資料生成器'batch_size進行調整並新增dropout神經層，在多次嘗試調整後，雖然仍有over_fitting的情況，但valid_accuracy也由約70%提升至70~80%，而training_accuracy稍微降低我認為可能是dropout神經層所導致。
 
 ### 此題所學
